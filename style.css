@@ -1,0 +1,298 @@
+/* Basic Reset & Variables */
+:root {
+  /* Warm Color Palette */
+  --clr-primary: #D35400;
+  /* Deep Tangelo */
+  --clr-secondary: #E67E22;
+  /* Carrot Orange */
+  --clr-bg: #FDFBF7;
+  /* Off-white/Cream */
+  --clr-card-bg: #FFFFFF;
+  --clr-text-main: #2C3E50;
+  --clr-text-light: #7F8C8D;
+  --clr-gold: #C0392B;
+  --clr-shadow: rgba(0, 0, 0, 0.1);
+
+  --font-main: 'Cairo', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+
+  --transition: all 0.3s linear;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: --font-main;
+  background-color: var(--clr-bg);
+  color: var(--clr-text-main);
+  line-height: 1.6;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Utilities */
+.container {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Header */
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* Parallax effect */
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+  position: relative;
+  /* For absolute positioning of lang switch */
+}
+
+/* Language Switcher */
+.lang-switch-container {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  /* In RTL, this will be right. In LTR scripts we might need to adjust or rely on flex */
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+body[dir="ltr"] .lang-switch-container {
+  right: auto;
+  left: 1.5rem;
+}
+
+.lang-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.lang-btn:hover {
+  background: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
+.logo {
+  font-family: var(--font-accent);
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.logo span {
+  color: var(--clr-secondary);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: var(--clr-gold);
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--clr-primary);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Filter Buttons */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border-color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0.5rem 1.5rem;
+  color: var(--clr-primary);
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  font-family: var(--font-main);
+  font-weight: 700;
+}
+
+.filter-btn:hover {
+  background: var(--clr-primary);
+  color: #fff;
+}
+
+.filter-btn.active {
+  background: var(--clr-primary);
+  color: #fff;
+}
+
+/* Menu Grid */
+.section-center {
+  display: grid;
+  gap: 2rem;
+  /* Responsive grid columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Menu Item Card */
+.menu-item {
+  background: var(--clr-card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 5px 15px var(--clr-shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.photo-container {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.menu-item:hover .photo {
+  transform: scale(1.1);
+}
+
+.item-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--clr-text-light);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.item-header h4 {
+  font-size: 1.2rem;
+  color: var(--clr-text-main);
+  font-weight: 700;
+}
+
+.price {
+  color: var(--clr-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.item-text {
+  color: var(--clr-text-light);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--clr-secondary);
+}
+
+.social-links span {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.social-links span:hover {
+  color: #fff;
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .main-header {
+    height: 30vh;
+  }
+}
