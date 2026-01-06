@@ -1,16 +1,17 @@
 /* Basic Reset & Variables */
 :root {
-  /* Warm Color Palette */
-  --clr-primary: #D35400;
-  /* Deep Tangelo */
-  --clr-secondary: #E67E22;
-  /* Carrot Orange */
+  /* Gourmet Palette (Burgundy & Gold) */
+  --clr-primary: #800020;
+  /* Burgundy */
+  --clr-secondary: #B8860B;
+  /* Dark Goldenrod */
   --clr-bg: #FDFBF7;
   /* Off-white/Cream */
   --clr-card-bg: #FFFFFF;
   --clr-text-main: #2C3E50;
   --clr-text-light: #7F8C8D;
-  --clr-gold: #C0392B;
+  --clr-gold: #D4AF37;
+  /* Gold */
   --clr-shadow: rgba(0, 0, 0, 0.1);
 
   --font-main: 'Cairo', sans-serif;
@@ -43,17 +44,14 @@ body {
 
 /* Header */
 .main-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  /* Parallax effect */
+  background: #ffffff;
+  /* Parallax effect removed for solid color */
   height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: #000000;
   margin-bottom: 2rem;
   position: relative;
   /* For absolute positioning of lang switch */
@@ -177,6 +175,7 @@ body[dir="ltr"] .lang-switch-container {
 
 /* Menu Item Card */
 .menu-item {
+  position: relative;
   background: var(--clr-card-bg);
   border-radius: var(--radius);
   overflow: hidden;
@@ -184,6 +183,20 @@ body[dir="ltr"] .lang-switch-container {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
+}
+
+.item-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary);
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-bottom-right-radius: var(--radius);
+  z-index: 10;
+  font-weight: bold;
+  font-family: var(--font-main);
+  font-size: 1.1rem;
 }
 
 .menu-item:hover {

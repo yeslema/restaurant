@@ -1,11 +1,11 @@
 // Translations for Static Text
 const translations = {
   ar: {
-    pageTitle: "مطعم الذواقة | Gourmet Restaurant",
-    logo: "مطعـم <span>الـذواقـة</span>",
-    tagline: "تجربة فريدة من المذاق الأصيل",
+    pageTitle: "Coup | Coffee and Dessert",
+    logo: "Coup",
+    tagline: "قهوة وحلويات",
     menuTitle: "قائمة الطعـام",
-    footerText: "جميع الحقوق محفوظة &copy; 2024 مطعم الذواقة",
+    footerText: "جميع الحقوق محفوظة &copy; 2024 Coup",
     all: "الكل",
     main: "وجبات رئيسية",
     starter: "مقبلات",
@@ -13,11 +13,11 @@ const translations = {
     dessert: "حلويات"
   },
   en: {
-    pageTitle: "Gourmet Restaurant",
-    logo: "Gourmet <span>Restaurant</span>",
-    tagline: "A Unique Experience of Authentic Taste",
+    pageTitle: "Coup | Coffee and Dessert",
+    logo: "Coup",
+    tagline: "Coffee and Dessert",
     menuTitle: "Our Menu",
-    footerText: "All Rights Reserved &copy; 2024 Gourmet Restaurant",
+    footerText: "All Rights Reserved &copy; 2024 Coup",
     all: "All",
     main: "Main Courses",
     starter: "Starters",
@@ -25,11 +25,11 @@ const translations = {
     dessert: "Desserts"
   },
   fr: {
-    pageTitle: "Restaurant Gourmet",
-    logo: "Restaurant <span>Gourmet</span>",
-    tagline: "Une Expérience Unique de Goût Authentique",
+    pageTitle: "Coup | Café et Dessert",
+    logo: "Coup",
+    tagline: "Café et Dessert",
     menuTitle: "Notre Menu",
-    footerText: "Tous Droits Réservés &copy; 2024 Restaurant Gourmet",
+    footerText: "Tous Droits Réservés &copy; 2024 Coup",
     all: "Tout",
     main: "Plats Principaux",
     starter: "Entrées",
@@ -188,6 +188,7 @@ function displayMenuItems(menuItems) {
     const itemCurrency = currentLang === 'ar' ? 'ر.س' : (currentLang === 'fr' ? 'SAR' : 'SAR'); // Simple currency handling
 
     return `<article class="menu-item fade-in">
+          <span class="item-number">${item.id}</span>
           <div class="photo-container">
             <img src="${item.img}" alt="${info.title}" class="photo" />
           </div>
@@ -208,15 +209,8 @@ function displayMenuItems(menuItems) {
 
 function displayMenuButtons() {
   // Get unique categories
-  const categories = menu.reduce(
-    function (values, item) {
-      if (!values.includes(item.category)) {
-        values.push(item.category);
-      }
-      return values;
-    },
-    ["all"]
-  );
+  // Specific categories requested: All, Drinks, Dessert
+  const categories = ["all", "drink", "dessert"];
 
   const categoryBtns = categories
     .map(function (category) {
