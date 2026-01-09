@@ -1,167 +1,322 @@
-// Translations for Static Text
+// Translations
 const translations = {
+  fr: {
+    pageTitle: "Coffee Bliss | Menu Moderne",
+    logo: "Coffee Bliss",
+    tagline: "L'art du café",
+    menuTitle: "Notre Carte",
+    footerText: "Tous droits réservés &copy; 2024 Coffee Bliss",
+    scanQr: "Scannez pour emporter",
+    // Categories
+    all: "Tout",
+    juice: "Jus",
+    milkshake: "Milkshake",
+    coffee: "Café",
+    iced: "Iced Coffee",
+    mojito: "Mojito"
+  },
   ar: {
-    pageTitle: "Coup | Coffee and Dessert",
-    logo: "Coup",
-    tagline: "قهوة وحلويات",
-    menuTitle: "قائمة الطعـام",
-    footerText: "جميع الحقوق محفوظة &copy; 2024 Coup",
+    pageTitle: "Coffee Bliss | قائمة القهوة",
+    logo: "Coffee Bliss",
+    tagline: "فن القهوة",
+    menuTitle: "قائمتنا",
+    footerText: "جميع الحقوق محفوظة &copy; 2024 Coffee Bliss",
+    scanQr: "امسح الكود",
+    // Categories
     all: "الكل",
-    main: "وجبات رئيسية",
-    starter: "مقبلات",
-    drink: "مشروبات",
-    dessert: "حلويات"
+    juice: "عصائر",
+    milkshake: "ميلك شيك",
+    coffee: "قهوة",
+    iced: "قهوة مثلجة",
+    mojito: "موهيتو"
   },
   en: {
-    pageTitle: "Coup | Coffee and Dessert",
-    logo: "Coup",
-    tagline: "Coffee and Dessert",
+    pageTitle: "Coffee Bliss | Modern Menu",
+    logo: "Coffee Bliss",
+    tagline: "The Art of Coffee",
     menuTitle: "Our Menu",
-    footerText: "All Rights Reserved &copy; 2024 Coup",
+    footerText: "All Rights Reserved &copy; 2024 Coffee Bliss",
+    scanQr: "Scan Menu",
+    // Categories
     all: "All",
-    main: "Main Courses",
-    starter: "Starters",
-    drink: "Drinks",
-    dessert: "Desserts"
-  },
-  fr: {
-    pageTitle: "Coup | Café et Dessert",
-    logo: "Coup",
-    tagline: "Café et Dessert",
-    menuTitle: "Notre Menu",
-    footerText: "Tous Droits Réservés &copy; 2024 Coup",
-    all: "Tout",
-    main: "Plats Principaux",
-    starter: "Entrées",
-    drink: "Boissons",
-    dessert: "Desserts"
+    juice: "Juices",
+    milkshake: "Milkshake",
+    coffee: "Coffee",
+    iced: "Iced Coffee",
+    mojito: "Mojito"
   }
 };
 
-// Menu Data with Multi-language support
+// Menu Data
 const menu = [
+  // --- JUICES ---
   {
     id: 1,
-    category: "main",
-    price: "85", // Numeric value, currency sorted in display
-    img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "juice",
+    price: "150",
+    img: "https://images.unsplash.com/photo-1621506260304-487c84a509c8?auto=format&fit=crop&w=800&q=80", // Orange
     translations: {
-      ar: { title: "مشاوي مشكلة فاخرة", desc: "تشكيلة مميزة من اللحوم الطازجة المشوية على الفحم، تقدم مع الأرز والصلصات الخاصة." },
-      en: { title: "Mixed Grill Deluxe", desc: "Premium selection of charcoal-grilled fresh meats, served with rice and special sauces." },
-      fr: { title: "Grillade Mixte", desc: "Sélection premium de viandes fraîches grillées au charbon, servies avec riz et sauces spéciales." }
+      fr: { title: "Jus d'Orange - Classique", desc: "Oranges fraîchement pressées." },
+      ar: { title: "عصير برتقال - كلاسيك", desc: "برتقال طازج معصور." },
+      en: { title: "Orange Juice - Classic", desc: "Freshly squeezed oranges." }
     }
   },
   {
     id: 2,
-    category: "starter",
-    price: "35",
-    img: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "juice",
+    price: "180",
+    img: "https://images.unsplash.com/photo-1603569283847-aa295f0d016a?auto=format&fit=crop&w=800&q=80", // Citrus Mix
     translations: {
-      ar: { title: "سلطة السيزر", desc: "خس طازج مع قطع الدجاج المشوي، جبنة البارميزان، وقطع الخبز المحمص." },
-      en: { title: "Caesar Salad", desc: "Fresh lettuce with grilled chicken pieces, parmesan cheese, and croutons." },
-      fr: { title: "Salade César", desc: "Laitue fraîche avec morceaux de poulet grillé, parmesan et croûtons." }
+      fr: { title: "Jus d'Orange - Ananas", desc: "Mélange tropical orange et ananas." },
+      ar: { title: "عصير برتقال - أناناس", desc: "مزيج استوائي من البرتقال والأناناس." },
+      en: { title: "Orange Juice - Pineapple", desc: "Tropical mix of orange and pineapple." }
     }
   },
   {
     id: 3,
-    category: "drink",
-    price: "20",
-    img: "https://images.unsplash.com/photo-1613478223719-2ab802602423?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "juice",
+    price: "180",
+    img: "https://images.unsplash.com/photo-1621506260304-487c84a509c8?auto=format&fit=crop&w=800&q=80", // Orange Mix
     translations: {
-      ar: { title: "عصير برتقال طبيعي", desc: "عصير برتقال طازج يعصر عند الطلب بدون إضافة سكر." },
-      en: { title: "Fresh Orange Juice", desc: "Freshly squeezed orange juice upon request, no sugar added." },
-      fr: { title: "Jus d'Orange Frais", desc: "Jus d'orange pressé frais sur demande, sans sucre ajouté." }
+      fr: { title: "Jus d'Orange - Mix", desc: "Cocktail d'agrumes vitaminé." },
+      ar: { title: "عصير برتقال - ميكس", desc: "كوكتيل حمضيات غني بالفيتامينات." },
+      en: { title: "Orange Juice - Mix", desc: "Vitamin-rich citrus cocktail." }
     }
   },
   {
     id: 4,
-    category: "main",
-    price: "120",
-    img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "juice",
+    price: "200",
+    img: "https://images.unsplash.com/photo-1623594611593-3ea3393b483c?auto=format&fit=crop&w=800&q=80", // Mango proper
     translations: {
-      ar: { title: "ستيك ريب آي", desc: "شريحة لحم بقر واغيو فاخرة، تقدم مع البطاطس المهروسة والخضار سوتيه." },
-      en: { title: "Ribeye Steak", desc: "Premium Wagyu beef steak, served with mashed potatoes and sautéed vegetables." },
-      fr: { title: "Steak Faux-filet", desc: "Steak de bœuf Wagyu premium, servi avec purée de pommes de terre et légumes sautés." }
+      fr: { title: "Jus de Mangue", desc: "Mangue fraîche de saison, onctueuse et sucrée." },
+      ar: { title: "عصير مانجو", desc: "مانجو موسمية طازجة، كريمية وحلوة." },
+      en: { title: "Mango Juice", desc: "Fresh seasonal mango, creamy and sweet." }
     }
   },
   {
     id: 5,
-    category: "dessert",
-    price: "40",
-    img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "juice",
+    price: "220",
+    img: "https://images.unsplash.com/photo-1634324185461-12c82305387b?auto=format&fit=crop&w=800&q=80", // Avocado
     translations: {
-      ar: { title: "تشيز كيك فراولة", desc: "طبقة غنية من الجبنة الكريمية مع قاعدة بسكويت وصلصة الفراولة الطازجة." },
-      en: { title: "Strawberry Cheesecake", desc: "Rich layer of cream cheese with biscuit base and fresh strawberry sauce." },
-      fr: { title: "Cheesecake Fraise", desc: "Riche couche de fromage à la crème avec base biscuit et coulis de fraise fraîche." }
+      fr: { title: "Avocat (Banane ou Ananas)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
+      ar: { title: "أفوكادو (موز أو أناناس)", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
+      en: { title: "Avocado (Banana or Pineapple)", desc: "Rich avocado blended with your choice of banana or pineapple." }
     }
   },
   {
     id: 6,
-    category: "drink",
-    price: "18",
-    img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "juice",
+    price: "150",
+    img: "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=800&q=80", // Lassi
     translations: {
-      ar: { title: "قهوة لاتيه", desc: "اسبريسو غني مع حليب مبخر ورغوة كثيفة." },
-      en: { title: "Cafe Latte", desc: "Rich espresso with steamed milk and thick foam." },
-      fr: { title: "Café Latte", desc: "Espresso riche avec lait chaud et mousse épaisse." }
+      fr: { title: "Lassi", desc: "Boisson traditionnelle au yaourt, fraîche et légère." },
+      ar: { title: "لاسي", desc: "مشروب زبادي تقليدي، منعش وخفيف." },
+      en: { title: "Lassi", desc: "Traditional yogurt drink, fresh and light." }
     }
   },
+
+  // --- MILKSHAKE (New Category) ---
   {
     id: 7,
-    category: "main",
-    price: "55",
-    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "milkshake",
+    price: "180",
+    img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80", // Choc Milkshake
     translations: {
-      ar: { title: "باستا ألفريدو", desc: "مكرونة فيتوتشيني مع صلصة الكريمة البيضاء وجبنة البارميزان." },
-      en: { title: "Fettuccine Alfredo", desc: "Fettuccine pasta with white cream sauce and parmesan cheese." },
-      fr: { title: "Fettuccine Alfredo", desc: "Pâtes fettuccine avec sauce à la crème blanche et parmesan." }
+      fr: { title: "Milkshake Chocolat", desc: "Crème glacée chocolat, lait frais et coulis chocolat." },
+      ar: { title: "ميلك شيك شوكولاتة", desc: "آيس كريم شوكولاتة، حليب طازج وصوص الشوكولاتة." },
+      en: { title: "Chocolate Milkshake", desc: "Chocolate ice cream, fresh milk, and chocolate sauce." }
     }
   },
   {
     id: 8,
-    category: "starter",
-    price: "25",
-    img: "https://images.unsplash.com/photo-1630409351241-e90e7f5e47ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "milkshake",
+    price: "190",
+    img: "https://images.unsplash.com/photo-1579954115567-dff45ce0380e?auto=format&fit=crop&w=800&q=80", // Strawberry Milkshake
     translations: {
-      ar: { title: "حمص بيروتي", desc: "حمص ناعم مع البقدونس، الثوم، زيت الزيتون ودبس الرمان." },
-      en: { title: "Beirut Hummus", desc: "Smooth hummus with parsley, garlic, olive oil, and pomegranate molasses." },
-      fr: { title: "Houmous Beyrouthi", desc: "Houmous onctueux avec persil, ail, huile d'olive et mélasse de grenade." }
+      fr: { title: "Milkshake Fraise", desc: "Fraises fraîches mixées avec glace vanille." },
+      ar: { title: "ميلك شيك فراولة", desc: "فراولة طازجة ممزوجة مع آيس كريم فانيليا." },
+      en: { title: "Strawberry Milkshake", desc: "Fresh strawberries blended with vanilla ice cream." }
     }
   },
   {
     id: 9,
-    category: "dessert",
-    price: "45",
-    img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "milkshake",
+    price: "200",
+    img: "https://images.unsplash.com/photo-1550950158-d0d960dff51b?auto=format&fit=crop&w=800&q=80", // Burger/Shake combo image often used, lets find a meringue looking one or generic white shake
     translations: {
-      ar: { title: "مولتن كيك", desc: "كيكة الشوكولاتة الساخنة مع قلب سائل، تقدم مع آيس كريم فانيليا." },
-      en: { title: "Molten Cake", desc: "Hot chocolate cake with liquid center, served with vanilla ice cream." },
-      fr: { title: "Gâteau Fondant", desc: "Gâteau au chocolat chaud avec cœur liquide, servi avec glace vanille." }
+      fr: { title: "Milkshake Meringue", desc: "Onctueux avec des éclats de meringue croquante." },
+      ar: { title: "ميلك شيك مرانج", desc: "كريمي مع قطع الميرانغ المقرمشة." },
+      en: { title: "Meringue Milkshake", desc: "Creamy with crunchy meringue shards." }
+    }
+  },
+
+  // --- COFFEE ---
+  {
+    id: 10,
+    category: "coffee",
+    price: "80",
+    img: "https://images.unsplash.com/photo-1510707577719-e2c070221361?auto=format&fit=crop&w=800&q=80", // Espresso
+    translations: {
+      fr: { title: "Espresso", desc: "L'essence pure du café, intense et aromatique." },
+      ar: { title: "إسبريسو", desc: "جوهر القهوة النقي، قوي وغني بالنكهة." },
+      en: { title: "Espresso", desc: "The pure essence of coffee, intense and aromatic." }
+    }
+  },
+  {
+    id: 11,
+    category: "coffee",
+    price: "120",
+    img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80", // Cappuccino
+    translations: {
+      fr: { title: "Cappuccino", desc: "Espresso équilibré avec lait chaud et mousse onctueuse." },
+      ar: { title: "كابتشينو", desc: "إسبريسو متوازن مع حليب ساخن ورغوة كريمية." },
+      en: { title: "Cappuccino", desc: "Balanced espresso with hot milk and creamy foam." }
+    }
+  },
+  {
+    id: 12,
+    category: "coffee",
+    price: "100",
+    img: "https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=800&q=80", // Cafe au lait
+    translations: {
+      fr: { title: "Café au lait", desc: "Café filtre corsé adouci par du lait chaud." },
+      ar: { title: "قهوة بالحليب", desc: "قهوة مفلترة قوية مخففة بالحليب الساخن." },
+      en: { title: "Café au lait", desc: "Bold drip coffee softened with hot milk." }
+    }
+  },
+  {
+    id: 13,
+    category: "coffee",
+    price: "110",
+    img: "https://images.unsplash.com/photo-1570968992193-6e5c922578b0?auto=format&fit=crop&w=800&q=80", // Cafe creme
+    translations: {
+      fr: { title: "Café crème", desc: "Un grand classique, doux et velouté." },
+      ar: { title: "كافية كريم", desc: "كلاسيكي عظيم، ناعم ومخملي." },
+      en: { title: "Café crème", desc: "A grand classic, smooth and velvety." }
+    }
+  },
+
+  // --- ICED COFFEE ---
+  {
+    id: 14,
+    category: "iced",
+    price: "140",
+    img: "https://images.unsplash.com/photo-1517701604599-bb29b5c73311?auto=format&fit=crop&w=800&q=80", // Iced Latte
+    translations: {
+      fr: { title: "Iced Latte", desc: "Classique, Caramel ou Chocolat. Rafraîchissant." },
+      ar: { title: "لاتيه مثلج", desc: "كلاسيك، كراميل أو شوكولاتة. منعش." },
+      en: { title: "Iced Latte", desc: "Classic, Caramel, or Chocolate. Refreshing." }
+    }
+  },
+  {
+    id: 15,
+    category: "iced",
+    price: "160",
+    img: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=800&q=80", // Spanish Latte
+    translations: {
+      fr: { title: "Spanish Latte", desc: "Espresso avec lait condensé sucré et glace." },
+      ar: { title: "سبانيش لاتيه", desc: "إسبريسو مع حليب مكثف محلى وثلج." },
+      en: { title: "Spanish Latte", desc: "Espresso with sweetened condensed milk and ice." }
+    }
+  },
+  {
+    id: 16,
+    category: "iced",
+    price: "150",
+    img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80", // Iced Cappuccino
+    translations: {
+      fr: { title: "Iced Cappuccino", desc: "La version glacée et mousseuse du cappuccino." },
+      ar: { title: "كابتشينو مثلج", desc: "النسخة المثلجة والرغوية من الكابتشينو." },
+      en: { title: "Iced Cappuccino", desc: "The icy and frothy version of the cappuccino." }
+    }
+  },
+
+  // --- MOJITO ---
+  {
+    id: 17,
+    category: "mojito",
+    price: "130",
+    img: "https://images.unsplash.com/photo-1551538827-9c037cb4f32d?auto=format&fit=crop&w=800&q=80", // Classic
+    translations: {
+      fr: { title: "Mojito Classique", desc: "Citron vert, menthe fraîche et soda pétillant." },
+      ar: { title: "موهيتو كلاسيك", desc: "ليمون أخضر، نعناع طازج وصودا فوارة." },
+      en: { title: "Classic Mojito", desc: "Lime, fresh mint, and sparkling soda." }
+    }
+  },
+  {
+    id: 18,
+    category: "mojito",
+    price: "140",
+    img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80", // Strawberry
+    translations: {
+      fr: { title: "Mojito Fraise", desc: "La fraîcheur du mojito avec une touche de fraise." },
+      ar: { title: "موهيتو فراولة", desc: "انتعاش الموهيتو مع لمسة من الفراولة." },
+      en: { title: "Strawberry Mojito", desc: "Mojito freshness with a touch of strawberry." }
+    }
+  },
+  {
+    id: 19,
+    category: "mojito",
+    price: "140",
+    img: "https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&fit=crop&w=800&q=80", // Mango
+    translations: {
+      fr: { title: "Mojito Mangue", desc: "Exotique et parfumé." },
+      ar: { title: "موهيتو مانجو", desc: "غريب ومعطر." },
+      en: { title: "Mango Mojito", desc: "Exotic and aromatic." }
+    }
+  },
+  {
+    id: 20,
+    category: "mojito",
+    price: "150",
+    img: "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=800&q=80", // Blue
+    translations: {
+      fr: { title: "Mojito Blue", desc: "Un océan de fraîcheur au sirop de curaçao bleu." },
+      ar: { title: "موهيتو أزرق", desc: "محيط من الانتعاش مع شراب الكوراساو الأزرق." },
+      en: { title: "Blue Mojito", desc: "An ocean of freshness with blue curacao syrup." }
     }
   }
 ];
 
-// Current Language State
-let currentLang = 'ar';
+// App State
+let currentLang = 'fr'; // Default requested by user
 let currentCategory = 'all';
 
-// Selectors
+// DOM Elements
 const sectionCenter = document.getElementById("menu-container");
 const buttonContainer = document.getElementById("btn-container");
+const qrBtn = document.getElementById("qr-btn");
+const qrModal = document.getElementById("qr-modal");
+const closeModal = document.querySelector(".close-modal");
 
-// Load Items
+// Initialization
 window.addEventListener("DOMContentLoaded", function () {
-  setLanguage('ar'); // Default language
+  setLanguage(currentLang);
+  setupModal();
 });
 
+// Language Logic
 function setLanguage(lang) {
   currentLang = lang;
 
-  // Update HTML dir and lang attributes
+  // HTML attributes
   document.documentElement.lang = lang;
   document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
 
-  // Update Static Texts
+  // Active Button State
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.innerText.toLowerCase() === lang ||
+      (lang === 'fr' && btn.innerText === 'FR') ||
+      (lang === 'ar' && btn.innerText === 'AR') ||
+      (lang === 'en' && btn.innerText === 'EN')) {
+      btn.classList.add('active');
+    }
+  });
+
+  // Translate Static Text
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach(element => {
     const key = element.getAttribute('data-i18n');
@@ -170,32 +325,30 @@ function setLanguage(lang) {
     }
   });
 
-  // Re-render menu and buttons
-  displayMenuItems(menu);
+  // Re-render
   displayMenuButtons();
+  displayMenuItems(menu);
 }
 
+// Menu Display
 function displayMenuItems(menuItems) {
-  // Filter if needed (handling logic here to make sure filter stays applied when lang changes)
   let itemsToDisplay = menuItems;
   if (currentCategory !== 'all') {
     itemsToDisplay = menuItems.filter(item => item.category === currentCategory);
   }
 
   let displayMenu = itemsToDisplay.map(function (item) {
-    // Get info based on current language
     const info = item.translations[currentLang];
-    const itemCurrency = currentLang === 'ar' ? 'ر.س' : (currentLang === 'fr' ? 'SAR' : 'SAR'); // Simple currency handling
+    const itemNum = String(item.id).padStart(2, '0');
 
     return `<article class="menu-item fade-in">
-          <span class="item-number">${item.id}</span>
           <div class="photo-container">
             <img src="${item.img}" alt="${info.title}" class="photo" />
           </div>
           <div class="item-info">
             <header class="item-header">
-              <h4>${info.title}</h4>
-              <h4 class="price">${item.price} <span style="font-size:0.8em">${itemCurrency}</span></h4>
+              <h4><span class="item-num">${itemNum}.</span> ${info.title}</h4>
+              <h4 class="price">${item.price} <span class="currency">MRU</span></h4>
             </header>
             <p class="item-text">
               ${info.desc}
@@ -207,15 +360,13 @@ function displayMenuItems(menuItems) {
   sectionCenter.innerHTML = displayMenu;
 }
 
+// Category Buttons
 function displayMenuButtons() {
-  // Get unique categories
-  // Specific categories requested: All, Drinks, Dessert
-  const categories = ["all", "drink", "dessert"];
+  const categories = ["all", "juice", "milkshake", "coffee", "iced", "mojito"];
 
   const categoryBtns = categories
     .map(function (category) {
-      // Get translated name for category
-      const categoryName = translations[currentLang][category] || category;
+      const categoryName = translations[currentLang][category];
       return `<button type="button" class="filter-btn" data-id="${category}">
           ${categoryName}
         </button>`;
@@ -224,25 +375,42 @@ function displayMenuButtons() {
 
   buttonContainer.innerHTML = categoryBtns;
 
-  // Logic to keep the active button highlighted
   const filterBtns = buttonContainer.querySelectorAll(".filter-btn");
 
-  // Find the button that corresponds to the currentCategory and make it active
+  // Set active class
   filterBtns.forEach(btn => {
     if (btn.dataset.id === currentCategory) {
       btn.classList.add('active');
     }
-  });
 
-  filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       currentCategory = e.currentTarget.dataset.id;
 
-      // Update Active Status
       filterBtns.forEach(b => b.classList.remove('active'));
       e.currentTarget.classList.add('active');
 
       displayMenuItems(menu);
     });
+  });
+}
+
+// Modal Logic
+function setupModal() {
+  if (qrBtn) {
+    qrBtn.addEventListener('click', () => {
+      qrModal.style.display = "block";
+    });
+  }
+
+  if (closeModal) {
+    closeModal.addEventListener('click', () => {
+      qrModal.style.display = "none";
+    });
+  }
+
+  window.addEventListener('click', (e) => {
+    if (e.target == qrModal) {
+      qrModal.style.display = "none";
+    }
   });
 }
