@@ -236,7 +236,7 @@ const menu = [
     price: "100",
     translations: {
       fr: { title: "pasteque", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "باستاك", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
+      ar: { title: "البطيخ", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
       en: { title: "watermelon", desc: "Rich avocado blended with your choice of banana or pineapple." }
     }
   },
