@@ -114,14 +114,14 @@ const menu = [
     price: "120",
     translations: {
       fr: { title: "Iced Latte" },
-      ar: { title: "" },
+      ar: { title: "آيس لاتي" },
       en: { title: "Iced Latte" }
     }
   },
   {
     id: 7,
     category: "iced",
-    price: "160",
+    price: "130",
     translations: {
       fr: { title: "Spanish Latte", desc: "Espresso avec lait condensé sucré et glace." },
       ar: { title: "سبانيش لاتيه", desc: "إسبريسو مع حليب مكثف محلى وثلج." },
@@ -131,20 +131,20 @@ const menu = [
   {
     id: 8,
     category: "iced",
-    price: "150",
+    price: "130",
     translations: {
-      fr: { title: "Iced Cappuccino", desc: "La version glacée et mousseuse du cappuccino." },
-      ar: { title: "كابتشينو مثلج", desc: "النسخة المثلجة والرغوية من الكابتشينو." },
-      en: { title: "Iced Cappuccino", desc: "The icy and frothy version of the cappuccino." }
+      fr: { title: "Iced Caramel latte", desc: "La version glacée et mousseuse du cappuccino." },
+      ar: { title: " آيس كاراميل لاتي", desc: "النسخة المثلجة والرغوية من الكابتشينو." },
+      en: { title: "Iced Caramel latte", desc: "The icy and frothy version of the cappuccino." }
     }
   },
   {
     id: 9,
     category: "iced",
-    price: "80",
+    price: "150",
     translations: {
       fr: { title: "iced Coup" },
-      ar: { title: "كوب " },
+      ar: { title: "آيس كو " },
       en: { title: "iced Coup" }
     }
   },
@@ -152,7 +152,7 @@ const menu = [
   {
     id: 10,
     category: "juice",
-    price: "150",
+    price: "100",
     translations: {
       fr: { title: "Orange", },
       ar: { title: " برتقال ", },
@@ -162,31 +162,31 @@ const menu = [
   {
     id: 11,
     category: "juice",
-    price: "180",
+    price: "100",
     translations: {
-      fr: { title: "Jus d'Orange ", desc: "Mélange tropical orange et ananas." },
-      ar: { title: "عصير برتقال - أناناس", desc: "مزيج استوائي من البرتقال والأناناس." },
-      en: { title: "Orange Juice - Pineapple", desc: "Tropical mix of orange and pineapple." }
+      fr: { title: "Queen's Fruit ", desc: "Mélange tropical orange et ananas." },
+      ar: { title: "كوينز فرويت", desc: "مزيج استوائي من البرتقال والأناناس." },
+      en: { title: "Queen's Fruit", desc: "Tropical mix of orange and pineapple." }
     }
   },
   {
     id: 12,
     category: "juice",
-    price: "180",
+    price: "120",
     translations: {
-      fr: { title: "Jus d'Orange - Mix", desc: "Cocktail d'agrumes vitaminé." },
-      ar: { title: "عصير برتقال - ميكس", desc: "كوكتيل حمضيات غني بالفيتامينات." },
-      en: { title: "Orange Juice - Mix", desc: "Vitamin-rich citrus cocktail." }
+      fr: { title: "Humangosaur", desc: "Cocktail d'agrumes vitaminé." },
+      ar: { title: "هيومانجوسور", desc: "كوكتيل حمضيات غني بالفيتامينات." },
+      en: { title: "Humangosaur", desc: "Vitamin-rich citrus cocktail." }
     }
   },
   {
     id: 13,
     category: "juice",
-    price: "200",
+    price: "100",
     translations: {
-      fr: { title: "Jus de Mangue", desc: "Mangue fraîche de saison, onctueuse et sucrée." },
-      ar: { title: "عصير مانجو", desc: "مانجو موسمية طازجة، كريمية وحلوة." },
-      en: { title: "Mango Juice", desc: "Fresh seasonal mango, creamy and sweet." }
+      fr: { title: "Mangue", desc: "Mangue fraîche de saison, onctueuse et sucrée." },
+      ar: { title: " مانجو", desc: "مانجو موسمية طازجة، كريمية وحلوة." },
+      en: { title: "Mango ", desc: "Fresh seasonal mango, creamy and sweet." }
     }
   },
   {
@@ -194,9 +194,9 @@ const menu = [
     category: "juice",
     price: "120",
     translations: {
-      fr: { title: "Avocat (Banane,Tmar )", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "أفوكادو (موز و أناناس)", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
-      en: { title: "Avocado (Banana or Pineapple)", desc: "Rich avocado blended with your choice of banana or pineapple." }
+      fr: { title: "Avocat (Banane,Date)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
+      ar: { title: "أفوكادو (موز و تمر )", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
+      en: { title: "Avocado (Banana,Date)", desc: "Rich avocado blended with your choice of banana or pineapple." }
     }
   },
   {
@@ -215,9 +215,29 @@ const menu = [
     category: "juice",
     price: "100",
     translations: {
-      fr: { title: "Avocat (Tmar )", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "أفوكادو (موز أو أناناس)", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
-      en: { title: "Avocado (Banana or Pineapple)", desc: "Rich avocado blended with your choice of banana or pineapple." }
+      fr: { title: "Avocat (Date)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
+      ar: { title: "أفوكادو (التمر)", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
+      en: { title: "Avocado (Date)", desc: "Rich avocado blended with your choice of banana or pineapple." }
+    }
+  },
+  {
+    id: 25,
+    category: "juice",
+    price: "100",
+    translations: {
+      fr: { title: "Secret Orange", desc: "Avocat riche mixé avec banane ou ananas au choix." },
+      ar: { title: "سيكريت اورينج", desc: "كوكتيل حمضيات غني بالفيتامينات." },
+      en: { title: "Secret Orange", desc: "Rich avocado blended with your choice of banana or pineapple." }
+    }
+  },
+  {
+    id: 26,
+    category: "juice",
+    price: "100",
+    translations: {
+      fr: { title: "pasteque", desc: "Avocat riche mixé avec banane ou ananas au choix." },
+      ar: { title: "باستاك", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
+      en: { title: "watermelon", desc: "Rich avocado blended with your choice of banana or pineapple." }
     }
   },
 
@@ -291,28 +311,38 @@ const menu = [
     price: "80",
     translations: {
       fr: { title: "Dessert jenga", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "أفوكادو (موز أو أناناس)", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
+      ar: { title: "حلوى جينجا", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
       en: { title: "Dessert jenga", desc: "Rich avocado blended with your choice of banana or pineapple." }
     }
   },
   {
     id: 24,
     category: "Gratin",
-    price: "150",
+    price: "130",
     translations: {
       fr: { title: "Mini Gratin" },
-      ar: { title: "كافية كريم" },
-      en: { title: "Mini Gratin"}
+      ar: { title: "جراتين صغيرة" },
+      en: { title: "Mini Gratin" }
     }
   },
   {
     id: 25,
     category: "Gratin",
-    price: "150",
+    price: "250",
     translations: {
       fr: { title: "Grande Gratin" },
-      ar: { title: "كافية كريم" },
-      en: { title: "Gr Gratin"}
+      ar: { title: "جراتين كبير" },
+      en: { title: "Gr Gratin" }
+    }
+  },
+  {
+    id: 27,
+    category: "Dessert",
+    price: "150",
+    translations: {
+      fr: { title: "Dessert ganacho" },
+      ar: { title: "حلوى جاناتسو" },
+      en: { title: "Dessert ganacho" }
     }
   }
 ];
