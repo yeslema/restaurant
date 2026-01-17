@@ -129,9 +129,9 @@ const menu = [
     category: "juice",
     price: "150",
     translations: {
-      fr: { title: "Jus d'Orange - Classique", desc: "Oranges fraîchement pressées." },
-      ar: { title: "عصير برتقال - كلاسيك", desc: "برتقال طازج معصور." },
-      en: { title: "Orange Juice - Classic", desc: "Freshly squeezed oranges." }
+      fr: { title: "Orange - Classique", },
+      ar: { title: " برتقال ", },
+      en: { title: "Orange  - Classic", }
     }
   },
   {
