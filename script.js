@@ -318,7 +318,7 @@ const menu = [
   {
     id: 24,
     category: "Gratin",
-    price: "130",
+    price: "150",
     translations: {
       fr: { title: "Mini Gratin" },
       ar: { title: "جراتين صغيرة" },
