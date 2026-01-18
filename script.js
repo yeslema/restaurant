@@ -192,7 +192,7 @@ const menu = [
   {
     id: 14,
     category: "juice",
-    price: "120",
+    price: "130",
     translations: {
       fr: { title: "Avocat (Banane,Date)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
       ar: { title: "أفوكادو (موز و تمر )", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
