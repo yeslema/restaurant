@@ -383,3 +383,26 @@ body[dir="rtl"] .item-num {
     left: auto;
   }
 }
+
+/* Seasonier Badge */
+.seasonier-badge {
+  background-color: #ff9800;
+  /* Orange/Gold */
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  font-weight: 600;
+  font-family: var(--font-main);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Highlight card if seasonier */
+.seasonier-active {
+  border: 1px solid #ff9800;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.15);
+}

@@ -60,6 +60,7 @@ const menu = [
     id: 1,
     category: "coffee",
     price: "80",
+    isSeasonier: false,
     translations: {
       fr: { title: "Espresso" },
       ar: { title: "إسبريسو" },
@@ -70,6 +71,7 @@ const menu = [
     id: 2,
     category: "coffee",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Cappuccino" },
       ar: { title: "كابتشينو" },
@@ -80,6 +82,7 @@ const menu = [
     id: 3,
     category: "coffee",
     price: "80",
+    isSeasonier: false,
     translations: {
       fr: { title: "Café au lait" },
       ar: { title: "قهوة بالحليب" },
@@ -90,6 +93,7 @@ const menu = [
     id: 4,
     category: "coffee",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Café crème" },
       ar: { title: "كافية كريم" },
@@ -100,6 +104,7 @@ const menu = [
     id: 5,
     category: "coffee",
     price: "130",
+    isSeasonier: false,
     translations: {
       fr: { title: "Coup" },
       ar: { title: "كو" },
@@ -112,6 +117,7 @@ const menu = [
     id: 6,
     category: "iced",
     price: "120",
+    isSeasonier: false,
     translations: {
       fr: { title: "Iced Latte" },
       ar: { title: "آيس لاتي" },
@@ -122,6 +128,7 @@ const menu = [
     id: 7,
     category: "iced",
     price: "130",
+    isSeasonier: false,
     translations: {
       fr: { title: "Spanish Latte", desc: "Espresso avec lait condensé sucré et glace." },
       ar: { title: "سبانيش لاتيه", desc: "إسبريسو مع حليب مكثف محلى وثلج." },
@@ -132,6 +139,7 @@ const menu = [
     id: 8,
     category: "iced",
     price: "130",
+    isSeasonier: false,
     translations: {
       fr: { title: "Iced Caramel latte", desc: "La version glacée et mousseuse du cappuccino." },
       ar: { title: " آيس كاراميل لاتي", desc: "النسخة المثلجة والرغوية من الكابتشينو." },
@@ -142,6 +150,7 @@ const menu = [
     id: 9,
     category: "iced",
     price: "150",
+    isSeasonier: false,
     translations: {
       fr: { title: "iced Coup" },
       ar: { title: "آيس كو " },
@@ -153,6 +162,7 @@ const menu = [
     id: 10,
     category: "juice",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Orange", },
       ar: { title: " برتقال ", },
@@ -163,6 +173,7 @@ const menu = [
     id: 11,
     category: "juice",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Queen's Fruit ", desc: "Mélange tropical orange et ananas." },
       ar: { title: "كوينز فرويت", desc: "مزيج استوائي من البرتقال والأناناس." },
@@ -173,6 +184,7 @@ const menu = [
     id: 12,
     category: "juice",
     price: "120",
+    isSeasonier: true,
     translations: {
       fr: { title: "Humangosaur", desc: "Cocktail d'agrumes vitaminé." },
       ar: { title: "هيومانجوسور", desc: "كوكتيل حمضيات غني بالفيتامينات." },
@@ -183,6 +195,7 @@ const menu = [
     id: 13,
     category: "juice",
     price: "100",
+    isSeasonier: true,
     translations: {
       fr: { title: "Mangue", desc: "Mangue fraîche de saison, onctueuse et sucrée." },
       ar: { title: " مانجو", desc: "مانجو موسمية طازجة، كريمية وحلوة." },
@@ -193,6 +206,7 @@ const menu = [
     id: 14,
     category: "juice",
     price: "130",
+    isSeasonier: false,
     translations: {
       fr: { title: "Avocat (Banane,Date)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
       ar: { title: "أفوكادو (موز و تمر )", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
@@ -203,6 +217,7 @@ const menu = [
     id: 15,
     category: "juice",
     price: "150",
+    isSeasonier: false,
     translations: {
       fr: { title: "Lassi", desc: "Boisson traditionnelle au yaourt, fraîche et légère." },
       ar: { title: "لاسي", desc: "مشروب زبادي تقليدي، منعش وخفيف." },
@@ -214,6 +229,7 @@ const menu = [
     id: 16,
     category: "juice",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Avocat (Date)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
       ar: { title: "أفوكادو (التمر)", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
@@ -224,6 +240,7 @@ const menu = [
     id: 25,
     category: "juice",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Secret Orange", desc: "Avocat riche mixé avec banane ou ananas au choix." },
       ar: { title: "سيكريت اورينج", desc: "كوكتيل حمضيات غني بالفيتامينات." },
@@ -234,6 +251,7 @@ const menu = [
     id: 26,
     category: "juice",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "pasteque", desc: "Avocat riche mixé avec banane ou ananas au choix." },
       ar: { title: "البطيخ", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
@@ -246,6 +264,7 @@ const menu = [
     id: 17,
     category: "milkshake",
     price: "150",
+    isSeasonier: false,
     translations: {
       fr: { title: "Milkshake Chocolat", desc: "Crème glacée chocolat, lait frais et coulis chocolat." },
       ar: { title: "ميلك شيك شوكولاتة", desc: "آيس كريم شوكولاتة، حليب طازج وصوص الشوكولاتة." },
@@ -256,6 +275,7 @@ const menu = [
     id: 18,
     category: "milkshake",
     price: "150",
+    isSeasonier: false,
     translations: {
       fr: { title: "Milkshake Fraise", desc: "Fraises fraîches mixées avec glace vanille." },
       ar: { title: "ميلك شيك فراولة", desc: "فراولة طازجة ممزوجة مع آيس كريم فانيليا." },
@@ -266,6 +286,7 @@ const menu = [
     id: 19,
     category: "milkshake",
     price: "150",
+    isSeasonier: false,
     translations: {
       fr: { title: "Milkshake Vanilla" },
       ar: { title: "ميلك شيك فانيليا" },
@@ -278,6 +299,7 @@ const menu = [
     id: 20,
     category: "mojito",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Mojito " },
       ar: { title: "موهيتو " },
@@ -288,6 +310,7 @@ const menu = [
     id: 21,
     category: "mojito",
     price: "120",
+    isSeasonier: true,
     translations: {
       fr: { title: "Mojito Mangue" },
       ar: { title: "موهيتو مانجو" },
@@ -298,6 +321,7 @@ const menu = [
     id: 22,
     category: "mojito",
     price: "100",
+    isSeasonier: false,
     translations: {
       fr: { title: "Mojito Blue" },
       ar: { title: "موهيتو أزرق" },
@@ -309,6 +333,7 @@ const menu = [
     id: 23,
     category: "Dessert",
     price: "80",
+    isSeasonier: false,
     translations: {
       fr: { title: "Dessert jenga", desc: "Avocat riche mixé avec banane ou ananas au choix." },
       ar: { title: "حلوى جينجا", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
@@ -319,6 +344,7 @@ const menu = [
     id: 24,
     category: "Gratin",
     price: "150",
+    isSeasonier: false,
     translations: {
       fr: { title: "Mini Gratin" },
       ar: { title: "جراتين صغيرة" },
@@ -329,6 +355,7 @@ const menu = [
     id: 25,
     category: "Gratin",
     price: "250",
+    isSeasonier: false,
     translations: {
       fr: { title: "Grande Gratin" },
       ar: { title: "جراتين كبير" },
@@ -339,6 +366,7 @@ const menu = [
     id: 27,
     category: "Dessert",
     price: "150",
+    isSeasonier: false,
     translations: {
       fr: { title: "Dessert ganacho" },
       ar: { title: "حلوى جاناتسو" },
@@ -408,12 +436,17 @@ function displayMenuItems(menuItems) {
     const info = item.translations[currentLang];
     const itemNum = String(item.id).padStart(2, '0');
 
-    return `<article class="menu-item fade-in">
+    return `<article class="menu-item fade-in ${item.isSeasonier ? 'seasonier-active' : ''}">
           <div class="item-info">
             <header class="item-header">
-              <h4><span class="item-num">${itemNum}.</span> ${info.title}</h4>
+              <h4>
+                <span class="item-num">${itemNum}.</span> 
+                ${info.title}
+                ${item.isSeasonier ? '<span class="seasonier-badge">Seasonier</span>' : ''}
+              </h4>
               <h4 class="price">${item.price} <span class="currency">MRU</span></h4>
             </header>
+            ${info.desc ? `<p class="item-text">${info.desc}</p>` : ''}
           </div>
         </article>`;
   });
