@@ -217,7 +217,7 @@ const menu = [
     id: 15,
     category: "juice",
     price: "150",
-    isSeasonier: false,
+    isSeasonier: true,
     translations: {
       fr: { title: "Lassi", desc: "Boisson traditionnelle au yaourt, fraîche et légère." },
       ar: { title: "لاسي", desc: "مشروب زبادي تقليدي، منعش وخفيف." },
@@ -335,9 +335,9 @@ const menu = [
     price: "80",
     isSeasonier: false,
     translations: {
-      fr: { title: "Dessert jenga", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "حلوى جينجا", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
-      en: { title: "Dessert jenga", desc: "Rich avocado blended with your choice of banana or pineapple." }
+      fr: { title: "Dessert jenga", desc: "" },
+      ar: { title: "حلوى جينجا", desc: "" },
+      en: { title: "Dessert jenga", desc: "" }
     }
   },
   {
