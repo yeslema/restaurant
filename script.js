@@ -130,9 +130,9 @@ const menu = [
     price: "130",
     isSeasonier: false,
     translations: {
-      fr: { title: "Spanish Latte", desc: "Espresso avec lait condensé sucré et glace." },
-      ar: { title: "سبانيش لاتيه", desc: "إسبريسو مع حليب مكثف محلى وثلج." },
-      en: { title: "Spanish Latte", desc: "Espresso with sweetened condensed milk and ice." }
+      fr: { title: "Spanish Latte" },
+      ar: { title: "سبانيش لاتيه"},
+      en: { title: "Spanish Latte"}
     }
   },
   {
@@ -141,9 +141,9 @@ const menu = [
     price: "130",
     isSeasonier: false,
     translations: {
-      fr: { title: "Iced Caramel latte", desc: "La version glacée et mousseuse du cappuccino." },
-      ar: { title: " آيس كاراميل لاتي", desc: "النسخة المثلجة والرغوية من الكابتشينو." },
-      en: { title: "Iced Caramel latte", desc: "The icy and frothy version of the cappuccino." }
+      fr: { title: "Iced Caramel latte" },
+      ar: { title: " آيس كاراميل لاتي" },
+      en: { title: "Iced Caramel latte"}
     }
   },
   {
@@ -175,9 +175,9 @@ const menu = [
     price: "100",
     isSeasonier: false,
     translations: {
-      fr: { title: "Queen's Fruit ", desc: "Mélange tropical orange et ananas." },
-      ar: { title: "كوينز فرويت", desc: "مزيج استوائي من البرتقال والأناناس." },
-      en: { title: "Queen's Fruit", desc: "Tropical mix of orange and pineapple." }
+      fr: { title: "Queen's Fruit "},
+      ar: { title: "كوينز فرويت" },
+      en: { title: "Queen's Fruit" }
     }
   },
   {
@@ -186,9 +186,9 @@ const menu = [
     price: "120",
     isSeasonier: true,
     translations: {
-      fr: { title: "Humangosaur", desc: "Cocktail d'agrumes vitaminé." },
-      ar: { title: "هيومانجوسور", desc: "كوكتيل حمضيات غني بالفيتامينات." },
-      en: { title: "Humangosaur", desc: "Vitamin-rich citrus cocktail." }
+      fr: { title: "Humangosaur"},
+      ar: { title: "هيومانجوسور" },
+      en: { title: "Humangosaur" }
     }
   },
   {
@@ -197,9 +197,9 @@ const menu = [
     price: "100",
     isSeasonier: true,
     translations: {
-      fr: { title: "Mangue", desc: "Mangue fraîche de saison, onctueuse et sucrée." },
-      ar: { title: " مانجو", desc: "مانجو موسمية طازجة، كريمية وحلوة." },
-      en: { title: "Mango ", desc: "Fresh seasonal mango, creamy and sweet." }
+      fr: { title: "Mangue" },
+      ar: { title: " مانجو" },
+      en: { title: "Mango " }
     }
   },
   {
@@ -208,9 +208,9 @@ const menu = [
     price: "130",
     isSeasonier: false,
     translations: {
-      fr: { title: "Avocat (Banane,Date)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "أفوكادو (موز و تمر )", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
-      en: { title: "Avocado (Banana,Date)", desc: "Rich avocado blended with your choice of banana or pineapple." }
+      fr: { title: "Avocat (Banane,Date)" },
+      ar: { title: "أفوكادو (موز و تمر )"},
+      en: { title: "Avocado (Banana,Date)"}
     }
   },
   {
@@ -219,9 +219,9 @@ const menu = [
     price: "150",
     isSeasonier: true,
     translations: {
-      fr: { title: "Lassi", desc: "Boisson traditionnelle au yaourt, fraîche et légère." },
-      ar: { title: "لاسي", desc: "مشروب زبادي تقليدي، منعش وخفيف." },
-      en: { title: "Lassi", desc: "Traditional yogurt drink, fresh and light." }
+      fr: { title: "Lassi" },
+      ar: { title: "لاسي" },
+      en: { title: "Lassi" }
     }
   },
 
@@ -231,9 +231,9 @@ const menu = [
     price: "100",
     isSeasonier: false,
     translations: {
-      fr: { title: "Avocat (Date)", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "أفوكادو (التمر)", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
-      en: { title: "Avocado (Date)", desc: "Rich avocado blended with your choice of banana or pineapple." }
+      fr: { title: "Avocat (Date)" },
+      ar: { title: "أفوكادو (التمر)"},
+      en: { title: "Avocado (Date)"}
     }
   },
   {
@@ -242,9 +242,9 @@ const menu = [
     price: "100",
     isSeasonier: false,
     translations: {
-      fr: { title: "Secret Orange", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "سيكريت اورينج", desc: "كوكتيل حمضيات غني بالفيتامينات." },
-      en: { title: "Secret Orange", desc: "Rich avocado blended with your choice of banana or pineapple." }
+      fr: { title: "Secret Orange" },
+      ar: { title: "سيكريت اورينج" },
+      en: { title: "Secret Orange"}
     }
   },
   {
@@ -253,9 +253,9 @@ const menu = [
     price: "100",
     isSeasonier: false,
     translations: {
-      fr: { title: "pasteque", desc: "Avocat riche mixé avec banane ou ananas au choix." },
-      ar: { title: "البطيخ", desc: "أفوكادو غني ممزوج مع الموز أو الأناناس حسب الاختيار." },
-      en: { title: "watermelon", desc: "Rich avocado blended with your choice of banana or pineapple." }
+      fr: { title: "pasteque"},
+      ar: { title: "البطيخ"},
+      en: { title: "watermelon"}
     }
   },
 
@@ -266,9 +266,9 @@ const menu = [
     price: "150",
     isSeasonier: false,
     translations: {
-      fr: { title: "Milkshake Chocolat", desc: "Crème glacée chocolat, lait frais et coulis chocolat." },
-      ar: { title: "ميلك شيك شوكولاتة", desc: "آيس كريم شوكولاتة، حليب طازج وصوص الشوكولاتة." },
-      en: { title: "Chocolate Milkshake", desc: "Chocolate ice cream, fresh milk, and chocolate sauce." }
+      fr: { title: "Milkshake Chocolat"},
+      ar: { title: "ميلك شيك شوكولاتة" },
+      en: { title: "Chocolate Milkshake" }
     }
   },
   {
@@ -277,9 +277,9 @@ const menu = [
     price: "150",
     isSeasonier: false,
     translations: {
-      fr: { title: "Milkshake Fraise", desc: "Fraises fraîches mixées avec glace vanille." },
-      ar: { title: "ميلك شيك فراولة", desc: "فراولة طازجة ممزوجة مع آيس كريم فانيليا." },
-      en: { title: "Strawberry Milkshake", desc: "Fresh strawberries blended with vanilla ice cream." }
+      fr: { title: "Milkshake Fraise"},
+      ar: { title: "ميلك شيك فراولة",
+      en: { title: "Strawberry Milkshake" }
     }
   },
   {
@@ -371,6 +371,28 @@ const menu = [
       fr: { title: "Dessert ganacho" },
       ar: { title: "حلوى جاناتسو" },
       en: { title: "Dessert ganacho" }
+    }
+  },
+  {
+    id: 28,
+    category: "Coffee",
+    price: "120",
+    isSeasonier: false,
+    translations: {
+      fr: { title: "Moka" },
+      ar: { title: "موكا" },
+      en: { title: "Moka" }
+    }
+  },
+  {
+    id: 29,
+    category: "iced",
+    price: "140",
+    isSeasonier: false,
+    translations: {
+      fr: { title: "Iced Moka" },
+      ar: { title: "ايس موكا" },
+      en: { title: "Iced Moka" }
     }
   }
 ];
